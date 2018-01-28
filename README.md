@@ -2,7 +2,7 @@
 
 | Bintray | Appveyor | Travis | 
 |---------|-----------|--------|
-|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/catch2%3Abincrafters/images/download.svg)](https://bintray.com/bincrafters/public-conan/catch2%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/2u7ar6ouysoeasl9?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-catch2)|[![Build Status](https://travis-ci.org/bincrafters/conan-catch2.svg?branch=stable%2F2.0.1)](https://travis-ci.org/bincrafters/conan-catch2)|
+|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/catch2%3Abincrafters/images/download.svg)](https://bintray.com/bincrafters/public-conan/catch2%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-catch2?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-catch2)|[![Build Status](https://travis-ci.org/bincrafters/conan-catch2.svg?)](https://travis-ci.org/bincrafters/conan-catch2)|
 
 ## Conan.io Information
 
