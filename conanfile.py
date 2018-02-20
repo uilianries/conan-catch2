@@ -7,7 +7,7 @@ import os
 
 class Catch2Conan(ConanFile):
     name = "catch2"
-    version = "2.1.1"
+    version = "2.1.2"
     description = "A modern, C++-native, header-only, framework for unit-tests, TDD and BDD"
     url = "https://github.com/bincrafters/conan-catch"
     license = "BSL-1.0"
