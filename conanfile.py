@@ -20,7 +20,6 @@ class Catch2Conan(ConanFile):
 
     def source(self):
         source_url = "https://github.com/catchorg/Catch2"
-
         tools.download(
             "{0}/releases/download/v{1}/{2}".format(source_url, self.version, self.header_name),
             self.header_name
@@ -31,10 +30,10 @@ class Catch2Conan(ConanFile):
         tools.get("{0}/archive/v{1}.tar.gz".format(source_url, self.version))
         os.rename(extracted_dir, self.source_subfolder)
 
-
     def package(self):
         self.copy(pattern="LICENSE.txt", dst="licenses", src=self.source_subfolder)
         self.copy(pattern=self.header_name, dst="include")
+        self.copy(pattern="*.cmake", dst="res", src=os.path.join(self.source_subfolder, "contrib"))
 
     def package_id(self):
         self.info.header_only()

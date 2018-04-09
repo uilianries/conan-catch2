@@ -6,8 +6,13 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
+include(${CONAN_RES_DIRS_CATCH2}/Catch.cmake)
+include(${CONAN_RES_DIRS_CATCH2}/ParseAndAddCatchTests.cmake)
+
 file(GLOB SOURCE_FILES *.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)
+
+catch_discover_tests(${PROJECT_NAME})
