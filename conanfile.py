@@ -32,7 +32,7 @@ class Catch2Conan(ConanFile):
 
     def package(self):
         self.copy(pattern="LICENSE.txt", dst="licenses", src=self.source_subfolder)
-        self.copy(pattern=self.header_name, dst="include")
+        self.copy(pattern=self.header_name, dst=os.path.join("include", self.name))
         self.copy(pattern="*.cmake", dst="res", src=os.path.join(self.source_subfolder, "contrib"))
 
     def package_id(self):
