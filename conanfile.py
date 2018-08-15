@@ -35,13 +35,14 @@ class Catch2Conan(ConanFile):
 
     def package(self):
         install_dir = tempfile.mkdtemp()
+        module_dir = os.path.join("lib", "cmake", "Catch2")
         cmake = CMake(self)
         cmake.definitions["CMAKE_INSTALL_PREFIX"] = install_dir
         cmake.configure()
         cmake.install()
         self.copy(pattern="LICENSE.txt", dst="licenses", src=self.source_subfolder)
         self.copy(pattern=self.header_name, dst=os.path.join("include", self.name))
-        self.copy(pattern="*.cmake", dst=".", src=os.path.join(install_dir, "lib", "cmake", "Catch2"))
+        self.copy(pattern="*.cmake", dst=module_dir, src=os.path.join(install_dir, module_dir))
 
     def package_id(self):
         self.info.header_only()
