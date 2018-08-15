@@ -6,8 +6,10 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-include(${CONAN_RES_DIRS_CATCH2}/Catch.cmake)
-include(${CONAN_RES_DIRS_CATCH2}/ParseAndAddCatchTests.cmake)
+find_package(Catch2 REQUIRED)
+
+include(${CONAN_CMAKE_MODULE_PATH}/Catch.cmake)
+include(${CONAN_CMAKE_MODULE_PATH}/ParseAndAddCatchTests.cmake)
 
 file(GLOB SOURCE_FILES *.cpp)
 
