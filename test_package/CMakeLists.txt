@@ -1,4 +1,4 @@
-project(test_package CXX)
+project(test_package)
 cmake_minimum_required(VERSION 3.0.2)
 
 set(CMAKE_VERBOSE_MAKEFILE TRUE)
@@ -6,10 +6,10 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-find_package(Catch2 REQUIRED)
+find_package(Catch2 2.3.0 REQUIRED CONFIG)
 
-include(Catch)
 include(ParseAndAddCatchTests)
+include(Catch)
 
 add_executable(${PROJECT_NAME} test_package.cpp)
 target_link_libraries(${PROJECT_NAME} Catch2::Catch2)
