@@ -1,18 +1,18 @@
 project(test_package)
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 3.0.2)
 
 set(CMAKE_VERBOSE_MAKEFILE TRUE)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-include(${CONAN_RES_DIRS_CATCH2}/Catch.cmake)
-include(${CONAN_RES_DIRS_CATCH2}/ParseAndAddCatchTests.cmake)
+find_package(Catch2 2.3.0 REQUIRED CONFIG)
 
-file(GLOB SOURCE_FILES *.cpp)
+include(ParseAndAddCatchTests)
+include(Catch)
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
+add_executable(${PROJECT_NAME} test_package.cpp)
+target_link_libraries(${PROJECT_NAME} Catch2::Catch2)
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)
 
 catch_discover_tests(${PROJECT_NAME})
