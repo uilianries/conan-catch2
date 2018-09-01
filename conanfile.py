@@ -38,6 +38,7 @@ class Catch2Conan(ConanFile):
         module_dir = os.path.join("lib", "cmake", "Catch2")
         cmake = CMake(self)
         cmake.definitions["CMAKE_INSTALL_PREFIX"] = install_dir
+        cmake.definitions["CMAKE_INSTALL_LIBDIR"] = "lib"
         cmake.configure()
         cmake.install()
         self.copy(pattern="LICENSE.txt", dst="licenses", src=self.source_subfolder)
