@@ -46,8 +46,6 @@ class Catch2Conan(ConanFile):
         self.copy(pattern="LICENSE.txt", dst="licenses", src=self.source_subfolder)
         self.copy(pattern=self.header_name, dst=os.path.join("include", self.name))
         self.copy(pattern="*.cmake", dst=module_dir, src=os.path.join(install_dir, module_dir))
-        tools.replace_in_file(os.path.join(self.package_folder, module_dir, "Catch2ConfigVersion.cmake"),
-         "# if the installed or the using project don't have CMAKE_SIZEOF_VOID_P set, ignore it:", "return()")
 
     def package_id(self):
         self.info.header_only()
