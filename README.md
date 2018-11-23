@@ -36,10 +36,10 @@ The contents of this GIT repository are completely separate from the software be
 
 ### License(s) for packaged software:
 
-    ~/.conan/data/catch2/2.2.0/bincrafters/package/<random_package_id>/licenses/LICENSE.txt
+    ~/.conan/data/catch2/2.4.2/bincrafters/package/<random_package_id>/licenses/LICENSE.txt
 
 *Note :   The most common filenames for OSS licenses are `LICENSE` AND `COPYING` without file extensions.*
 
 ### License for Bincrafters recipe:
 
-    ~/.conan/data/catch2/2.1.0/bincrafters/export/LICENSE.md
+    ~/.conan/data/catch2/2.4.2/bincrafters/export/LICENSE.md

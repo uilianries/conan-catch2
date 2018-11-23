@@ -8,7 +8,7 @@ import tempfile
 
 class Catch2Conan(ConanFile):
     name = "catch2"
-    version = "2.4.1"
+    version = "2.4.2"
     description = "A modern, C++-native, header-only, framework for unit-tests, TDD and BDD"
     homepage = "https://github.com/catchorg/Catch2"
     url = "https://github.com/bincrafters/conan-catch"

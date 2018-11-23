@@ -6,7 +6,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-find_package(Catch2 2.4.0 REQUIRED CONFIG)
+find_package(Catch2 2.4.2 REQUIRED CONFIG)
 
 include(ParseAndAddCatchTests)
 include(Catch)
