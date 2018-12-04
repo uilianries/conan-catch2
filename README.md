@@ -1,3 +1,13 @@
+## Packge Deprecation Notice
+
+The author of this library has taken ownership of the public Conan package for this library, which can be found at the following links:
+
+https://github.com/catchorg/Catch2
+https://bintray.com/catchorg/Catch2/Catch2%3Acatchorg
+
+Bincrafters will keep this version of the package on Github and Bintray for some unspecified amount of time (typically several weeks), however it will no longer be maintained or supported and will be removed without any further warning or notice. Users are advised to update their projects to use the official Conan package maintained by the library author immediately.
+
+
 ## Package Status
 
 | Bintray | Appveyor | Travis |
@@ -14,7 +24,7 @@ Bincrafters packages can be found in the following public Conan repository:
 
 ## Issues
 
-If you wish to report an issue or make a request for a Bincrafters package, please do so here:  
+If you wish to report an issue or make a request for a Bincrafters package, please do so here:
 
 [Bincrafters Community Issues](https://github.com/bincrafters/community/issues)
 
@@ -30,7 +40,7 @@ This GIT repository is managed by the Bincrafters team and holds files related t
 
 ## License Information
 
-Bincrafters packages are hosted on [Bintray](https://bintray.com) and contain Open-Source software which is licensed by the software's maintainers and NOT Bincrafters.  For each Open-Source package published by Bincrafters, the packaging process obtains the required license files along with the original source files from the maintainer, and includes these license files in the generated Conan packages.  
+Bincrafters packages are hosted on [Bintray](https://bintray.com) and contain Open-Source software which is licensed by the software's maintainers and NOT Bincrafters.  For each Open-Source package published by Bincrafters, the packaging process obtains the required license files along with the original source files from the maintainer, and includes these license files in the generated Conan packages.
 
 The contents of this GIT repository are completely separate from the software being packaged and therefor licensed separately.  The license for all files contained in this GIT repository are defined in the [LICENSE.md](LICENSE.md) file in this repository.  The licenses included with all Conan packages published by Bincrafters can be found in the Conan package directories in the following locations, relative to the Conan Cache root (`~/.conan` by default):
 
