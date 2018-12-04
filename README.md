@@ -5,7 +5,8 @@ The author of this library has taken ownership of the public Conan package for t
 https://github.com/catchorg/Catch2
 https://bintray.com/catchorg/Catch2/Catch2%3Acatchorg
 
-Bincrafters will keep this version of the package on Github and Bintray for some unspecified amount of time (typically several weeks), however it will no longer be maintained or supported and will be removed without any further warning or notice. Users are advised to update their projects to use the official Conan package maintained by the library author immediately.
+Bincrafters will keep this version of the package on Github and Bintray, however it will no longer be maintained or supported.
+Users are advised to update their projects to use the official Conan package maintained by the library author immediately.
 
 
 ## Package Status

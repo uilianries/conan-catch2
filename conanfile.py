@@ -32,10 +32,8 @@ class Catch2Conan(ConanFile):
         tools.get("{0}/archive/v{1}.tar.gz".format(self.homepage, self.version))
         os.rename(extracted_dir, self.source_subfolder)
 
-    @property
-    def alias(self):
+    def configure(self):
         self.output.warn("Package catch2/bincrafters is being deprecated. Change yours to require catchorg instead")
-        return "Catch2/2.5.0@catchorg/stable"
 
     def package(self):
         install_dir = tempfile.mkdtemp()
